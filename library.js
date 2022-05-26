@@ -1,3 +1,8 @@
+/*
+ * 取得當前時間字串
+ * 格式參考: "2022-01-01 12:00:00"
+ *
+ */
 const getTime = () => {
     let time = new Date();
     date = time.getFullYear() + "-" + (time.getMonth() + 1) + "-" + time.getDate();
