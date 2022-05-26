@@ -23,3 +23,13 @@ const truncate = (str, n) => {
     return str.length > n ? str.substr(0, n - 1) + "&hellip;" : str;
 };
 
+/*
+ * 取得網址連結上的參數
+ * Ex: /index.html?id=1
+ *
+ * name: 要獲取的參數名稱，如上方範例則輸入"id"
+ */
+const getUrl = (paramName) => {
+    let param = new URLSearchParams(window.location.search);
+    return param.get(paramName);
+};
