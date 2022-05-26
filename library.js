@@ -14,3 +14,12 @@ const getTime = () => {
 };
 
 /*
+ * 將一個字串裁切為指定長度，若超過指定長度則在字串後加入"..."
+ *
+ * str: 傳入字串
+ * n: 指定長度
+ */
+const truncate = (str, n) => {
+    return str.length > n ? str.substr(0, n - 1) + "&hellip;" : str;
+};
+
